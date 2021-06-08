@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 
-export const About = () =>
+const About = () =>
 <Layout 
 title="About Me"
 >

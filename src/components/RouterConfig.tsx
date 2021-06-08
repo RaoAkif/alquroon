@@ -36,7 +36,7 @@ export const RouterConfig = () => (
             <Home />
           </Route>
           <Route path="/Admissions">
-            <Contact />
+            <Admissions />
           </Route>
           <Route path="/About">
             <About />
@@ -45,7 +45,7 @@ export const RouterConfig = () => (
             <Contact />
           </Route>
           <Route path="/Downloads">
-            <Contact />
+            <Downloads />
           </Route>
         </Switch>
       </div>

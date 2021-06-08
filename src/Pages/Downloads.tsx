@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 
-export const Downloads = () =>
+const Downloads = () =>
     <Layout
     title="Downloads"
     >

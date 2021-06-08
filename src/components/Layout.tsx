@@ -9,7 +9,7 @@ type LayoutProps = {
 
 export const Layout: FunctionComponent<LayoutProps> = ({ title, children }) => 
   <div id='layout'>
-    <h2>{title}</h2>
+    <h1>{title}</h1>
     <div id="paragraph"> {children} </div>
     <Footer />
   </div>
