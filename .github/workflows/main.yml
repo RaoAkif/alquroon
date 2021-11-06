@@ -14,3 +14,4 @@ jobs:
         server: ftp.elearningholyquran.com
         username: admin@elearningholyquran.com
         password: ${{ secrets.ACCESSTOKEN }}
+        port: 90
