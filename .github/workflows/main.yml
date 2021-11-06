@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        server: 173.201.191.100
-        username: admin@elearningholyquran.com
-        password: ${{ secrets.ACCESSTOKEN }}
+        ftp-server: ftp://173.201.191.100
+        ftp-username: admin@elearningholyquran.com
+        ftp-password: ${{ secrets.ACCESSTOKEN }}
