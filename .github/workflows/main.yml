@@ -13,4 +13,4 @@ jobs:
       with:
         server: ftp://173.201.191.100
         username: admin@elearningholyquran.com
-        password: ${{ secrets_ftp_password }}
+        password: ${{ SECRETS_FTP_PASSWORD }}
