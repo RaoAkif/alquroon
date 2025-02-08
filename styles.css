@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #1F1F1F;
     color: white;
 }
 
@@ -485,101 +485,51 @@ a:focus {
 
 /* Contact Section */
 #contact {
-    background: #121212; /* Pure dark background */
-    color: white;
-    padding: 100px 60px;
+    /* max-width: 600px; */
+    margin: 0 auto;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 50px 20px;
+    background: #1F1F1F;
+    color: #fff;
 }
 
-/* Title */
+/* Section Title */
 .section-title {
-    font-size: 3rem;
-    color: #ffcc00;
+    font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-}
-
-/* Contact Container */
-.contact-container {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    text-align: left;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-}
-
-/* Contact Labels */
-.contact-label {
-    font-size: 1.2rem;
-    font-weight: 600;
+    margin-bottom: 15px;
     color: #ffcc00;
-    margin-bottom: 5px;
 }
 
 /* Contact Details */
 .contact-detail {
     font-size: 1.1rem;
-    color: #ddd;
-    margin-bottom: 20px;
+    color: #e0c97f;
+    font-weight: 500;
+    line-height: 1.6;
 }
 
-/* Separator Line */
-.separator {
-    border: none;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 20px 0;
-}
-
-/* WhatsApp Link */
-.whatsapp-link {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #25D366;
+/* Links */
+.contact-detail a {
+    font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
+    color: #e0c97f;
 }
 
-.whatsapp-link:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
-}
 
-/* WhatsApp Icon */
-.whatsapp-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center center / contain;
-    margin-right: 10px;
-}
-
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .contact-container {
-        text-align: center;
-        padding: 30px;
+    .section-title {
+        font-size: 1.8rem;
     }
 
-    .whatsapp-link {
-        justify-content: center;
+    .contact-detail {
+        font-size: 1rem;
+        display: block;
     }
 }
 
-
-
-
-/* CONTACT FORM ENDS HERE */
-
-/* Footer */
 /* Footer */
 #footer {
     background: black;
