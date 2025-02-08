@@ -139,6 +139,8 @@ h2 {
     background: #e6b800; /* Slightly darker on hover */
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: #141414; /* Dark text for contrast */
+    text-decoration: none;
 }
 
 /* Secondary Button - More Contrast */
@@ -420,7 +422,7 @@ a:focus {
 
 /* Work Item (Book Card) */
 .work-item {
-    background: rgba(255, 255, 255, 0.1);
+    background: whitesmoke;
     padding: 20px;
     border-radius: 15px;
     min-width: 200px;

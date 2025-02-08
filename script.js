@@ -66,8 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
         workItem.classList.add("work-item");
         workItem.innerHTML = `
             <img src="${book.cover}" alt="Book Cover">
-            <h3>${book.title}</h3>
-            <p>${book.desc}</p>
         `;
         return workItem;
     }
