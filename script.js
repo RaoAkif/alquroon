@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Smooth scrolling for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50, // Adjust for header height if necessary
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // Dynamic text animation
     const dynamicText = document.querySelector(".dynamic-text");
     const words = ["Story", "Book", "Legacy"];
     let index = 0;
@@ -7,12 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
         dynamicText.textContent = words[index];
         index = (index + 1) % words.length;
     }, 2000);
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+    // Book carousel population
     const carouselTrack = document.querySelector(".carousel-track");
-
-    // Dummy API for book covers
     const bookCovers = [
         "https://via.placeholder.com/150x220?text=Book+1",
         "https://via.placeholder.com/150x220?text=Book+2",
@@ -31,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { title: "Beyond the Horizon", desc: "A sci-fi adventure that bends the limits of space and time." }
     ];
 
-    // Function to duplicate carousel items for infinite effect
     function populateCarousel() {
         bookData.forEach((book, index) => {
             const workItem = document.createElement("div");

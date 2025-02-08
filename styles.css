@@ -79,7 +79,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(-45deg, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);
+    background: linear-gradient(-45deg, #0D1B2A, #1B263B, #415A77, #778DA9);
     background-size: 400% 400%;
     animation: gradientShift 10s ease infinite;
 }
@@ -101,6 +101,26 @@ nav ul li a:hover {
     0%, 100% { content: "Story"; }
     33% { content: "Book"; }
     66% { content: "Legacy"; }
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #141414;
+    background: #FFCC00;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #dab41a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -512,85 +532,38 @@ nav ul li a:hover {
 /* Footer */
 /* Footer */
 #footer {
-    background: #101010;
-    color: #bbb;
-    padding: 50px 20px;
+    background: black;
+    color: white;
+    padding: 10px 20px; /* Reduced padding */
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center; /* Ensures content is centered */
+    min-height: auto; /* Allows it to shrink to content */
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
+/* Footer container */
 .footer-container {
     max-width: 800px;
     width: 100%;
 }
 
-/* Footer Logo */
-.footer-logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ffcc00;
-    margin-bottom: 5px;
-}
-
 /* Footer Slogan */
 .footer-text {
     font-size: 1.1rem;
-    color: #888;
-    margin-bottom: 20px;
-}
-
-/* Footer Links */
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.footer-links a {
-    color: #bbb;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #ffcc00;
-}
-
-/* Social Links */
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.social-link {
-    color: #bbb;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.social-link:hover {
-    color: #ffcc00;
-}
-
-/* Separator */
-.footer-separator {
-    border: none;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 20px auto;
-    width: 60%;
+    color: white;
+    margin-bottom: 10px; /* Adjust spacing */
 }
 
 /* Copyright */
 .footer-copy {
     font-size: 0.9rem;
-    color: #666;
+    color: white;
+    margin: 0; /* Removes extra margin */
+    padding: 0; /* Ensures no extra space */
 }
+
 
 
