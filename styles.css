@@ -72,16 +72,17 @@ nav ul li a:hover {
     }
 }
 
-/* Hero Section */
+/* Hero Section - Ensuring Sufficient Contrast */
 #hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(-45deg, #0D1B2A, #1B263B, #415A77, #778DA9);
+    background: linear-gradient(-45deg, #d35400, #f39c12, #f1c40f);
     background-size: 400% 400%;
     animation: gradientShift 10s ease infinite;
+    color: #ffffff; /* White ensures high contrast */
 }
 
 @keyframes gradientShift {
@@ -90,38 +91,87 @@ nav ul li a:hover {
     100% { background-position: 0% 50%; }
 }
 
-/* Dynamic Text */
-.dynamic-text {
-    color: #ffcc00;
+/* Headings - Improved Readability */
+h1 {
+    font-size: 3rem;
     font-weight: bold;
-    animation: textChange 6s infinite;
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Stronger shadow for readability */
 }
 
-@keyframes textChange {
-    0%, 100% { content: "Story"; }
-    33% { content: "Book"; }
-    66% { content: "Legacy"; }
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffe082; /* Yellow with good contrast */
 }
 
+/* Dynamic Text - High Contrast */
+.dynamic-text {
+    color: #ffeb3b; /* Bright yellow for better contrast */
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    animation: textFade 6s infinite;
+}
+
+@keyframes textFade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Buttons - Darker Text for Readability */
 .btn {
     display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 14px 26px; /* Bigger tap area */
+    font-size: 18px; /* Larger text for readability */
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    color: #141414;
-    background: #FFCC00;
+    color: #141414; /* Dark text for contrast */
+    background: #ffcc00; /* Bright yellow */
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
-    background: #dab41a;
+    background: #e6b800; /* Slightly darker on hover */
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
+/* Secondary Button - More Contrast */
+.btn-secondary {
+    background: #ff8c00; /* Darker orange for better contrast */
+    color: #ffffff;
+    border: 2px solid #e67e22;
+}
+
+.btn-secondary:hover {
+    background: #d2691e; /* Darker brownish-orange for contrast */
+}
+
+/* Links - High Contrast */
+a {
+    color: #ffeb3b; /* Bright yellow for visibility */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+/* Focus States - Essential for Keyboard Navigation */
+.btn:focus,
+a:focus {
+    outline: 3px solid #ffffff; /* High-contrast white outline */
+    outline-offset: 3px;
+}
+
+
 
 
 /* HERO SECITON ENDS HERE */
