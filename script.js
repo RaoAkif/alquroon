@@ -40,14 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
             cover: "./images/book-covers/book2.png"
         },
         { 
-            title: "Mufasir-e-Quran Sheikh Ismail Haqqi", 
-            desc: "A detailed account of the life and contributions of Sheikh Ismail Haqqi.",
-            cover: "./images/book-covers/book1.png"
-        },
-        { 
-            title: "Jog Katha by Owais Qarni", 
-            desc: "An insightful exploration of spiritual and philosophical themes by Owais Qarni.",
-            cover: "./images/book-covers/book2.png"
+            title: "Talismaat-e-Ghalib", 
+            desc: "A mystical interpretation of Ghalib’s poetry, blending thought, passion, and depth.",
+            cover: "./images/book-covers/book3.png"
         },
         { 
             title: "Mufasir-e-Quran Sheikh Ismail Haqqi", 
@@ -58,6 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Jog Katha by Owais Qarni", 
             desc: "An insightful exploration of spiritual and philosophical themes by Owais Qarni.",
             cover: "./images/book-covers/book2.png"
+        },
+        { 
+            title: "Talismaat-e-Ghalib", 
+            desc: "A mystical interpretation of Ghalib’s poetry, blending thought, passion, and depth.",
+            cover: "./images/book-covers/book3.png"
         },
     ];
 
